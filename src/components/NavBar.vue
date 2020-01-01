@@ -9,7 +9,7 @@
       >
     </nav>
     <div id="name">
-      <h4>Peterson Ngo</h4>
+      <h4>Peterson </h4>
     </div>
   </div>
 </template>

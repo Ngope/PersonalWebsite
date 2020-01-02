@@ -45,6 +45,7 @@ export default {
 .spacing {
   margin-right: 20px;
   float: right;
+  color: whitesmoke;
 }
   #name{
     float: left;

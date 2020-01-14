@@ -27,7 +27,7 @@ export default {
         },
         {
           id: 1,
-          text: "About",
+          text: "Resume",
           page: "/About"
         },
         {

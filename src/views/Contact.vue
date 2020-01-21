@@ -1,20 +1,20 @@
 <template>
-  <div id="list">
-    <h3 id = "info">Please click the icon for contact information</h3>
-    <b-container class="bv-example-row">
-      <b-row>
-        <b-col>
-          <a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="git" src="../assets/linkedin.png" /></a>
-        </b-col>
-        <b-col>
+  <div class="list">
+    <b-alert show variant="light">Click the icons</b-alert>
+    <div class="mt-3">
+      <b-card-group deck>
+        <b-card bg-variant="light" header="LinkedIn" class="text-center">
+          <a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="git" src="../assets/linkedin.png" ></a>
+        </b-card>
+        <b-card bg-variant="light" header="GitHub" class="text-center">
           <br>
           <a href="http://github.com/Ngope" target="blank"><img class="git" src="../assets/Github.png" /></a>
-        </b-col>
-        <b-col>
+        </b-card>
+        <b-card bg-variant="light" header="GMail" class="text-center">
           <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCgMJJVLQTPmZFkKgjGclwHVgfdxMcFgHndshqHnpqGbfKjqplQNsbQpTgsdRRCqpLB" target="blank"><img class= "git" src="../assets/gmail.png" /></a>
-        </b-col>
-      </b-row>
-    </b-container>
+        </b-card>
+      </b-card-group>
+    </div>
   </div>
 </template>
 
@@ -31,13 +31,10 @@ export default {
 </script>
 
 <style scoped>
-#list {
+.list {
   font-size: 20px;
 }
 .git {
   width: 150px;
 }
-  #info{
-    padding: 30px;
-  }
 </style>

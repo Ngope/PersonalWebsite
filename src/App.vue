@@ -29,6 +29,9 @@ export default {
 #nav {
   padding: 30px;
   background-color: lightsteelblue;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 
 #nav a {

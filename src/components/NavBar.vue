@@ -21,11 +21,6 @@ export default {
     return {
       links: [
         {
-          id: 2,
-          text: "Contact",
-          page: "/Contact"
-        },
-        {
           id: 1,
           text: "Resume",
           page: "/About"

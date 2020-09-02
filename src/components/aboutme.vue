@@ -13,7 +13,7 @@
           <b-col cols="8">
             <b-list-group class="greyBackground">
               <b-list-group-item><span class="InfoHeader"><u>About me</u></span></b-list-group-item>
-              <b-list-group-item> <span class="bodyHeader next">Fact: </span>
+              <b-list-group-item>
                 <p> I started this personal website as a fun side project to help build my skills as a front-end developer. In this website I use a lightweight framework called Vue.
                   I plan to keep updating this as I begin to obtain more knowledge and become a full stacked developer.</p>
               </b-list-group-item>
@@ -101,14 +101,11 @@ export default {
     flex-flow: row nowrap;
     justify-content: space-around;
   }
-   .bodyHeader{
-    font-weight: bold;
-     font-size:20px;
+   .bodyHeader {
+     font-weight: bold;
+     font-size: 20px;
      float: left;
      margin-left: 2.0em;
-   }
-   .bodyHeader next{
-     display: block;
    }
    .answer{
      text-align: right;
@@ -128,6 +125,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-self:center;
+    margin: 2em;
     width: 100%;
 
   }
@@ -149,7 +147,7 @@ export default {
     width: 30%  !important;
   }
   .Skills-icons{
-    width: 8%;
+    width: 10%;
   }
   .My-Profile-Pic{
     display: flex;
@@ -162,6 +160,10 @@ export default {
      justify-content: space-between;
      align-items: center;
    }
+  b-list-group-item{
+    display:flex !important;
+    flex-flow:column wrap !important;
+  }
   @media only screen and (max-width: 1200px) {
     .Middle-Section{
       display: flex;
@@ -180,9 +182,44 @@ export default {
     .icons{
       width: 40%  !important;
     }
+    .Headshot{
+      width:auto;
+      margin: auto 2em;
+    }
     .mt-3 hello{
       display: flex;
       flex-flow: column wrap;
+    }
+    .Skills span{
+      font-size:15px;
+    }
+
+    .Skills-icons{
+      width: 20%;
+      margin: 1em;
+    }
+    .inside-list{
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 380px){
+  b-jumbotron header{
+    font-size: 30px;
+   }
+    .Headshot{
+      width: 280%;
+      margin: auto;
+      justify-content: center;
+    }
+    Skills span{
+      font-size:7px;
+    }
+    .Skills-icons{
+      width: 30%;
+      margin:1em;
+    }
+    .inside-list{
+      flex-direction: column;
     }
   }
 </style>

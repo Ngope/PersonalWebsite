@@ -31,7 +31,9 @@ export default {
   background-color: lightsteelblue;
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 #nav a {

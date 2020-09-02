@@ -13,34 +13,75 @@
           <b-col cols="8">
             <b-list-group class="greyBackground">
               <b-list-group-item><span class="InfoHeader"><u>About me</u></span></b-list-group-item>
-              <b-list-group-item> <span class="bodyHeader">Fact: </span>
-                I started this personal website as a fun side project to help build my skills as a front-end developer. In this website I use a lightweight framework called Vue.
-                I plan to keep updating this as I begin to obtain more knowledge and become a full stacked developer.
+              <b-list-group-item> <span class="bodyHeader next">Fact: </span>
+                <p> I started this personal website as a fun side project to help build my skills as a front-end developer. In this website I use a lightweight framework called Vue.
+                  I plan to keep updating this as I begin to obtain more knowledge and become a full stacked developer.</p>
               </b-list-group-item>
               <b-list-group-item><span class="bodyHeader">Major: </span> <span class="answer">B.S. Computer Science</span></b-list-group-item>
               <b-list-group-item><span class="bodyHeader">Minor: </span> <span class="answer">Informatics</span></b-list-group-item>
-              <b-list-group-item><span class="bodyHeader">GPA: </span> <span class="answer">3.6/4.0</span></b-list-group-item>
-              <b-list-group-item><span class="bodyHeader">Language: </span><span class="answer"> Java</span> </b-list-group-item>
+              <b-list-group-item><span class="bodyHeader">GPA: </span> <span class="answer">3.604/4.0</span></b-list-group-item>
+              <b-list-group-item><span class="bodyHeader">Email: </span><span class="answer"> Ngop0629@gmail.com</span> </b-list-group-item>
             </b-list-group>
           </b-col>
           </div>
         </div> <!--ends the middle section-->
       </b-row>
     </b-container>
-    <hr>
+
+    <b-jumbotron>
+    <div class= "Skills">
+      <b-list-group-item><span class="InfoHeader"><u>Technical Skills</u></span></b-list-group-item>
+        <b-list-group-item>
+          <div class="inside-list">
+            <span class="bodyHeader">Java </span>
+            <img src="../assets/Java-icon.png" class="Skills-icons">
+          </div>
+        </b-list-group-item>
+      <b-list-group-item>
+        <div class="inside-list">
+          <span class="bodyHeader">C</span>
+          <img src="../assets/C-Icon.png" class="Skills-icons">
+        </div>
+      </b-list-group-item>
+      <b-list-group-item>
+        <div class="inside-list">
+          <span class="bodyHeader">Vue</span>
+          <img src="../assets/vue.png" class="Skills-icons">
+        </div>
+      </b-list-group-item>
+      <b-list-group-item>
+        <div class="inside-list">
+          <span class="bodyHeader">HTML & CSS</span>
+          <img src="../assets/html5.png" class="Skills-icons">
+        </div>
+      </b-list-group-item>
+      <b-list-group-item>
+        <div class="inside-list">
+          <span class="bodyHeader">Git</span>
+          <img src="../assets/git.png" class="Skills-icons">
+        </div>
+      </b-list-group-item>
+      <b-list-group-item>
+        <div class="inside-list">
+          <span class="bodyHeader">Linux Commands</span>
+          <img src="../assets/console.png" class="Skills-icons">
+        </div>
+      </b-list-group-item>
+    </div>
+    </b-jumbotron>
     <div class="list">
-    <b-alert show variant="light">Click the icons</b-alert>
-    <div class="mt-3">
+    <b-alert show variant="light">Contact & Social Media</b-alert>
+    <div class="mt-3 hello">
       <b-card-group deck>
         <b-card bg-variant="light" header="LinkedIn" class="text-center">
-          <a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="git" src="../assets/linkedin.png" ></a>
+          <a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="icons" src="../assets/linkedin.png" ></a>
         </b-card>
         <b-card bg-variant="light" header="GitHub" class="text-center">
           <br>
-          <a href="http://github.com/Ngope" target="blank"><img class="git" src="../assets/Github.png" /></a>
+          <a href="http://github.com/Ngope" target="blank"><img class="icons" src="../assets/Github.png" /></a>
         </b-card>
         <b-card bg-variant="light" header="GMail" class="text-center">
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCgMJJVLQTPmZFkKgjGclwHVgfdxMcFgHndshqHnpqGbfKjqplQNsbQpTgsdRRCqpLB" target="blank"><img class= "git" src="../assets/gmail.png" /></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCgMJJVLQTPmZFkKgjGclwHVgfdxMcFgHndshqHnpqGbfKjqplQNsbQpTgsdRRCqpLB" target="blank"><img class= "icons" src="../assets/gmail.png" /></a>
         </b-card>
       </b-card-group>
       </div>
@@ -62,19 +103,26 @@ export default {
   }
    .bodyHeader{
     font-weight: bold;
-     font-size:18px;
+     font-size:20px;
      float: left;
      margin-left: 2.0em;
+   }
+   .bodyHeader next{
+     display: block;
    }
    .answer{
      text-align: right;
    }
+    .Skills{
+      width:40%;
+      margin: 0 auto;
+
+    }
   .Headshot{
     border-radius: 50%;
     padding-bottom: 60px;
     width: auto;
     margin-left: 2em;
-
   }
   .aboutME{
     display: flex;
@@ -90,31 +138,51 @@ export default {
    .InfoHeader{
      font-weight: bold;
      font-size: 25px;
+
    }
   .list{
     font-size: 20px  !important;
-    margin: 2em;
+    margin: 0 2em;
+    margin-bottom: 2em;
   }
-  .git{
-    width: 150px  !important;
+  .icons{
+    width: 30%  !important;
   }
-
+  .Skills-icons{
+    width: 8%;
+  }
+  .My-Profile-Pic{
+    display: flex;
+    justify-content: center;
+    width:80%
+  }
+   .inside-list{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     align-items: center;
+   }
   @media only screen and (max-width: 1200px) {
     .Middle-Section{
       display: flex;
       flex-flow: column nowrap;
+      margin-bottom: 3em;
     }
     .My-Profile-Pic{
       display: flex;
       justify-content: center;
     }
-    img{
-      width: 100%;
+    .icons{
+      width: 40%!important;
     }
   }
-  @media screen and (max-width: 800px){
-    img {
-      width: 100%;
+  @media screen and (max-width: 900px){
+    .icons{
+      width: 40%  !important;
+    }
+    .mt-3 hello{
+      display: flex;
+      flex-flow: column wrap;
     }
   }
 </style>

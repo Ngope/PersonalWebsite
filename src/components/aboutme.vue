@@ -1,9 +1,16 @@
 <template>
   <div>
-  <b-jumbotron header="Aspiring Software Engineer" lead="Indiana University Bloomington Class of 2022" class="MainHeader">
-    <h1> Peterson Ngo.</h1>
+  <b-jumbotron  class="MainHeader">
+    <div class="scriptType">
+      <vue-typed-js :strings="['Aspiring Software Engineer.', 'IU Class of 2022', 'Aspiring Software Engineer.', 'IU Class of 2022', 'Aspiring Software Engineer.', 'IU Class of 2022', 'Aspiring Software Engineer.']">
+        <h1 class="typing"></h1>
+      </vue-typed-js>
+    </div>
+    <h3> Peterson Ngo.</h3>
   </b-jumbotron>
     <b-container fluid>
+      <div data-aos="fade-up"
+           data-aos-duration="1000">
       <b-row>
         <div class="Middle-Section">
             <div class="My-Profile-Pic">
@@ -20,15 +27,20 @@
               <b-list-group-item><span class="bodyHeader">Major: </span> <span class="answer">B.S. Computer Science</span></b-list-group-item>
               <b-list-group-item><span class="bodyHeader">Minor: </span> <span class="answer">Informatics</span></b-list-group-item>
               <b-list-group-item><span class="bodyHeader">GPA: </span> <span class="answer">3.604/4.0</span></b-list-group-item>
-              <b-list-group-item><span class="bodyHeader">Email: </span><span class="answer"> Ngop0629@gmail.com</span> </b-list-group-item>
+              <b-list-group-item><span class="bodyHeader">Email: </span><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCgMJJVLQTPmZFkKgjGclwHVgfdxMcFgHndshqHnpqGbfKjqplQNsbQpTgsdRRCqpLB" target="blank"><img class= "icons" src="../assets/gmail.png" /></a></b-list-group-item>
+              <b-list-group-item><span class="bodyHeader">LinkedIn: </span><a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="icons" src="../assets/linkedin.png" ></a></b-list-group-item>
+              <b-list-group-item><span class="bodyHeader">GitHub: </span><a href="http://github.com/Ngope" target="blank"><img class="icons" src="../assets/Github.png" /></a></b-list-group-item>
             </b-list-group>
           </b-col>
           </div>
         </div> <!--ends the middle section-->
       </b-row>
+      </div> <!---ends the scrolling animation for the middle section-->
     </b-container>
 
     <b-jumbotron>
+      <div data-aos="fade-up"
+           data-aos-duration="1000">
     <div class= "Skills">
       <b-list-group-item><span class="InfoHeader"><u>Technical Skills</u></span></b-list-group-item>
         <b-list-group-item>
@@ -67,26 +79,10 @@
           <img src="../assets/console.png" class="Skills-icons">
         </div>
       </b-list-group-item>
-    </div>
+    </div> <!---ends the div for technical skills--->
+      </div> <!---Ends scrolling animation for technical skills-->
     </b-jumbotron>
-    <div class="list">
-    <b-alert show variant="light">Contact & Social Media</b-alert>
-    <div class="mt-3 hello">
-      <b-card-group deck>
-        <b-card bg-variant="light" header="LinkedIn" class="text-center">
-          <a href="https://www.linkedin.com/in/peterson-ngo-9802a9170/" target="blank"><img class="icons" src="../assets/linkedin.png" ></a>
-        </b-card>
-        <b-card bg-variant="light" header="GitHub" class="text-center">
-          <br>
-          <a href="http://github.com/Ngope" target="blank"><img class="icons" src="../assets/Github.png" /></a>
-        </b-card>
-        <b-card bg-variant="light" header="GMail" class="text-center">
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTgCgMJJVLQTPmZFkKgjGclwHVgfdxMcFgHndshqHnpqGbfKjqplQNsbQpTgsdRRCqpLB" target="blank"><img class= "icons" src="../assets/gmail.png" /></a>
-        </b-card>
-      </b-card-group>
-      </div>
-    </div>
-  </div> <!--done with content-->
+  </div>
 </template>
 
 <script>
@@ -130,7 +126,7 @@ export default {
 
   }
   .MainHeader {
-    padding-top: 11.0em;
+    padding-top: 10.0em;
     border-bottom: 2px solid grey;
   }
    .InfoHeader{
@@ -144,7 +140,7 @@ export default {
     margin-bottom: 2em;
   }
   .icons{
-    width: 30%  !important;
+    width: 20%  !important;
   }
   .Skills-icons{
     width: 10%;
@@ -163,6 +159,14 @@ export default {
   b-list-group-item{
     display:flex !important;
     flex-flow:column wrap !important;
+  }
+  .scriptType{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .typing{
+    font-size: 40px;
   }
   @media only screen and (max-width: 1200px) {
     .Middle-Section{
@@ -202,7 +206,7 @@ export default {
       flex-direction: column;
     }
   }
-  @media screen and (max-width: 380px){
+  @media screen and (max-width: 420px){
   b-jumbotron header{
     font-size: 30px;
    }
